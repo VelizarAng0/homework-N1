@@ -1,0 +1,97 @@
+//Trapec:
+
+import java.util.Scanner;
+
+public class Trapec {
+
+	public static void main(String[] args)       {
+		Scanner value = new Scanner(System.in);
+	      double a = value.nextDouble();
+	      double b = value.nextDouble();
+	      double c = value.nextDouble();
+	      double h = value.nextDouble();
+	      System.out.println("S: " + ((a+b)*h)/2);
+
+		}
+}
+
+
+
+
+
+
+
+//Pravougulnik:
+
+import java.util.Scanner;
+
+public class Pravougulnik {
+  
+	public static void main (String[] args) {
+      Scanner value = new Scanner(System.in);
+	    double a = value.nextDouble();
+	    double b = value.nextDouble(); 
+	    System.out.println("P = " + (2*a + 2*b));
+	    System.out.println("S = " + a*b);
+		
+	}	
+}
+
+
+
+
+
+
+
+//Okrujnost:
+
+import java.util.Scanner;
+
+public class Okrujnost {
+
+	public static void main(String[] args)       {
+		Scanner value = new Scanner(System.in);
+		  double r = value.nextDouble();
+	      System.out.println("C: " + 2*3.14*r );
+	      System.out.println("S: " + 3.14*(r*r));
+
+		}
+}
+
+
+
+
+
+
+
+//Parichki:
+
+import java.util.Scanner;
+
+public class Parichki {
+
+	public static void main (String[] args) {
+	   Scanner value = new Scanner(System.in);	
+	    double bitcoin = value.nextDouble();
+	    double yen = value.nextDouble(); 
+	    
+	    double percent = value.nextDouble();
+	    double commision = percent / 100;
+	    
+		double euroToLev = 1.95;
+	    
+	    double bitcoinToLev = 1168;
+	    double bitcoinToEuro = bitcoinToLev / euroToLev;
+	    
+		double dolarToLev = 1.76;
+		
+		double yenToDolar = 0.15;
+		double yenToLev = (yen * yenToDolar) * dolarToLev;
+		double yenToEuro = yenToLev / 1.95;
+		
+		double finalEuro = (bitcoinToEuro * bitcoin) + yenToEuro;
+		
+		System.out.println("Euros: " + finalEuro * commision) ;	
+	}
+	
+}
